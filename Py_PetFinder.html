@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>PetFinder_RF_Regression</title>
+<title>Py_PetFinder</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13116,7 +13116,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h1><p>This is an analysis that I did for the Kaggle 'PetFinder.my Adoption Prediction' competition (<a href="https://www.kaggle.com/c/petfinder-adoption-prediction/data">https://www.kaggle.com/c/petfinder-adoption-prediction/data</a>). The goal of the competition is to predict how quickly a pet will be adopted based on characteristics of their online profile.</p>
+<h1 id="Predicting-Pet-Adoption-Speed-With-XGBoost-in-Python">Predicting Pet Adoption Speed With XGBoost in Python<a class="anchor-link" href="#Predicting-Pet-Adoption-Speed-With-XGBoost-in-Python">&#182;</a></h1><h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>This is an analysis that I did for the Kaggle 'PetFinder.my Adoption Prediction' competition (<a href="https://www.kaggle.com/c/petfinder-adoption-prediction/data">https://www.kaggle.com/c/petfinder-adoption-prediction/data</a>). The goal of the competition is to predict how quickly a pet will be adopted based on characteristics of their online profile.</p>
 <p>The target variable is 'Adoption Speed' which is an ordinal integer variable ranging from 0 to 4. If 0, the pet was adopted on the same day it was listed, and if 4, the pet had not yet been adopted after 100 days. The accuracy metric for the competetion is the quadratic weighted kappa, which measures the agreement between Adoption Speed and model predictions. This metric varies from 0 (random agreement) to 1 (complete agreement), and penalizes predictions that are further away from the target.</p>
 <p>The competition data includes tabular, text, and image data. The tabular data includes information such as the pet's age, gender and size. The text data is the discription of the pet, and the image data are the images of the pet on the profile. The text and image data have been run through Google's Natural Language, and Vision APIs and the results can be added to the dataset for inclusion as model predictors.</p>
 
@@ -13197,7 +13197,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Exploratory-Data-Analysis-and-Feature-Engineering">Exploratory Data Analysis and Feature Engineering<a class="anchor-link" href="#Exploratory-Data-Analysis-and-Feature-Engineering">&#182;</a></h1>
+<h2 id="Exploratory-Data-Analysis-and-Feature-Engineering">Exploratory Data Analysis and Feature Engineering<a class="anchor-link" href="#Exploratory-Data-Analysis-and-Feature-Engineering">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13279,7 +13279,7 @@ memory usage: 2.7+ MB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="AdoptionSpeed">AdoptionSpeed<a class="anchor-link" href="#AdoptionSpeed">&#182;</a></h2><p>The target variable: the length of time before a pet was adopted:</p>
+<h3 id="AdoptionSpeed">AdoptionSpeed<a class="anchor-link" href="#AdoptionSpeed">&#182;</a></h3><p>The target variable: the length of time before a pet was adopted:</p>
 <p>0 = The pet was adopted on the same day as it was listed</p>
 <p>1 = The pet was adopted in first week</p>
 <p>2 = The pet was adopted between 8 and 30 days (1st month)</p>
@@ -13332,7 +13332,7 @@ memory usage: 2.7+ MB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Type">Type<a class="anchor-link" href="#Type">&#182;</a></h2><p>Type of animal
+<h3 id="Type">Type<a class="anchor-link" href="#Type">&#182;</a></h3><p>Type of animal
 1 = dog, 2 = cat</p>
 
 </div>
@@ -13397,7 +13397,7 @@ memory usage: 2.7+ MB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Name">Name<a class="anchor-link" href="#Name">&#182;</a></h2><p>Name of animal</p>
+<h3 id="Name">Name<a class="anchor-link" href="#Name">&#182;</a></h3><p>Name of animal</p>
 <p>Animals without a name may be less likely to be adopted - create a variable NoName. Some names are really short and meaninless, could also create a variable 'MeaninglessName', or also include these as 'NoName'. Another possibility is that animals with cute names may be more likely to be adopted - I could include this in a future sentiment analysis.</p>
 
 </div>
@@ -13682,7 +13682,7 @@ Name: Name, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Age">Age<a class="anchor-link" href="#Age">&#182;</a></h2><p>Age in months</p>
+<h3 id="Age">Age<a class="anchor-link" href="#Age">&#182;</a></h3><p>Age in months</p>
 
 </div>
 </div>
@@ -13819,7 +13819,7 @@ Name: Age, dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Breed-(Breed1-&amp;-Breed2)">Breed (Breed1 &amp; Breed2)<a class="anchor-link" href="#Breed-(Breed1-&amp;-Breed2)">&#182;</a></h2><p>Breed1 is the primary breed, and Breed2 is the secondary breed for mixed breed animals. Since purebred is reported as an important variable in the literature I will create a 'PureBred' feature, and label encode Breed1 and Breed2. 
+<h3 id="Breed-(Breed1-&amp;-Breed2)">Breed (Breed1 &amp; Breed2)<a class="anchor-link" href="#Breed-(Breed1-&amp;-Breed2)">&#182;</a></h3><p>Breed1 is the primary breed, and Breed2 is the secondary breed for mixed breed animals. Since purebred is reported as an important variable in the literature I will create a 'PureBred' feature, and label encode Breed1 and Breed2. 
 The labels are in the labels csv (307 = mixed breed).</p>
 
 </div>
@@ -13975,7 +13975,7 @@ Name: Breed1, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Gender">Gender<a class="anchor-link" href="#Gender">&#182;</a></h2><p>Gender of pet (1 = Male, 2 = Female, 3 = Mixed, if profile represents group of pets)</p>
+<h3 id="Gender">Gender<a class="anchor-link" href="#Gender">&#182;</a></h3><p>Gender of pet (1 = Male, 2 = Female, 3 = Mixed, if profile represents group of pets)</p>
 
 </div>
 </div>
@@ -14031,7 +14031,7 @@ Name: Breed1, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Colour">Colour<a class="anchor-link" href="#Colour">&#182;</a></h2><p>Colour 1, 2 and 3 of pet</p>
+<h3 id="Colour">Colour<a class="anchor-link" href="#Colour">&#182;</a></h3><p>Colour 1, 2 and 3 of pet</p>
 
 </div>
 </div>
@@ -14243,7 +14243,7 @@ Name: Color1, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Maturity-Size">Maturity Size<a class="anchor-link" href="#Maturity-Size">&#182;</a></h2><p>Size at maturity (1 = Small, 2 = Medium, 3 = Large, 4 = Extra Large, 0 = Not Specified)</p>
+<h3 id="Maturity-Size">Maturity Size<a class="anchor-link" href="#Maturity-Size">&#182;</a></h3><p>Size at maturity (1 = Small, 2 = Medium, 3 = Large, 4 = Extra Large, 0 = Not Specified)</p>
 
 </div>
 </div>
@@ -14299,7 +14299,7 @@ Name: Color1, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Fur-Length">Fur Length<a class="anchor-link" href="#Fur-Length">&#182;</a></h2><p>Fur length (1 = Short, 2 = Medium, 3 = Long, 0 = Not Specified)</p>
+<h3 id="Fur-Length">Fur Length<a class="anchor-link" href="#Fur-Length">&#182;</a></h3><p>Fur length (1 = Short, 2 = Medium, 3 = Long, 0 = Not Specified)</p>
 
 </div>
 </div>
@@ -14355,7 +14355,7 @@ Name: Color1, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Vaccinated">Vaccinated<a class="anchor-link" href="#Vaccinated">&#182;</a></h2><p>Pet has been vaccinated (1 = Yes, 2 = No, 3 = Not Sure)</p>
+<h3 id="Vaccinated">Vaccinated<a class="anchor-link" href="#Vaccinated">&#182;</a></h3><p>Pet has been vaccinated (1 = Yes, 2 = No, 3 = Not Sure)</p>
 
 </div>
 </div>
@@ -14411,7 +14411,7 @@ Name: Color1, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Dewormed">Dewormed<a class="anchor-link" href="#Dewormed">&#182;</a></h2><p>Pet has been dewormed (1 = Yes, 2 = No, 3 = Not Sure)</p>
+<h3 id="Dewormed">Dewormed<a class="anchor-link" href="#Dewormed">&#182;</a></h3><p>Pet has been dewormed (1 = Yes, 2 = No, 3 = Not Sure)</p>
 
 </div>
 </div>
@@ -14459,7 +14459,7 @@ Name: Color1, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Sterilized">Sterilized<a class="anchor-link" href="#Sterilized">&#182;</a></h2><p>Pet has been spayed / neutered (1 = Yes, 2 = No, 3 = Not Sure)</p>
+<h3 id="Sterilized">Sterilized<a class="anchor-link" href="#Sterilized">&#182;</a></h3><p>Pet has been spayed / neutered (1 = Yes, 2 = No, 3 = Not Sure)</p>
 
 </div>
 </div>
@@ -14507,7 +14507,7 @@ Name: Color1, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Health">Health<a class="anchor-link" href="#Health">&#182;</a></h2><p>Health Condition (1 = Healthy, 2 = Minor Injury, 3 = Serious Injury, 0 = Not Specified)</p>
+<h3 id="Health">Health<a class="anchor-link" href="#Health">&#182;</a></h3><p>Health Condition (1 = Healthy, 2 = Minor Injury, 3 = Serious Injury, 0 = Not Specified)</p>
 
 </div>
 </div>
@@ -14555,7 +14555,7 @@ Name: Color1, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Quantity">Quantity<a class="anchor-link" href="#Quantity">&#182;</a></h2><p>Number of pets represented in profile</p>
+<h3 id="Quantity">Quantity<a class="anchor-link" href="#Quantity">&#182;</a></h3><p>Number of pets represented in profile</p>
 
 </div>
 </div>
@@ -14602,7 +14602,7 @@ Name: Color1, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Fee">Fee<a class="anchor-link" href="#Fee">&#182;</a></h2><p>Adoption fee (0 = Free)</p>
+<h3 id="Fee">Fee<a class="anchor-link" href="#Fee">&#182;</a></h3><p>Adoption fee (0 = Free)</p>
 
 </div>
 </div>
@@ -14649,7 +14649,7 @@ Name: Color1, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="State">State<a class="anchor-link" href="#State">&#182;</a></h2><p>State location in Malaysia (state names are in the StateLabels dictionary). An issue is there are different states in the train and test sets. I will create a variable based on the value counts in a state.</p>
+<h3 id="State">State<a class="anchor-link" href="#State">&#182;</a></h3><p>State location in Malaysia (state names are in the StateLabels dictionary). An issue is there are different states in the train and test sets. I will create a variable based on the value counts in a state.</p>
 
 </div>
 </div>
@@ -14752,7 +14752,7 @@ Name: State, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="RescuerID">RescuerID<a class="anchor-link" href="#RescuerID">&#182;</a></h2><p>Unique hash ID of rescuer. Again, there are different rescuers in the train and test sets. I will create a variable based on rescuer value counts.</p>
+<h3 id="RescuerID">RescuerID<a class="anchor-link" href="#RescuerID">&#182;</a></h3><p>Unique hash ID of rescuer. Again, there are different rescuers in the train and test sets. I will create a variable based on rescuer value counts.</p>
 
 </div>
 </div>
@@ -14855,7 +14855,7 @@ Name: RescuerID, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="VideoAmt-and-PhotoAmt">VideoAmt and PhotoAmt<a class="anchor-link" href="#VideoAmt-and-PhotoAmt">&#182;</a></h2><p>Total uploaded videos and photos for this pet, respectively.</p>
+<h3 id="VideoAmt-and-PhotoAmt">VideoAmt and PhotoAmt<a class="anchor-link" href="#VideoAmt-and-PhotoAmt">&#182;</a></h3><p>Total uploaded videos and photos for this pet, respectively.</p>
 
 </div>
 </div>
@@ -14909,7 +14909,7 @@ Name: RescuerID, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Description">Description<a class="anchor-link" href="#Description">&#182;</a></h2><p>Profile write-up for this pet. The primary language used is English, with some in Malay or Chinese. In future I could include a custom sentiment analysis, but for now I will use the sentiment analysis provided.</p>
+<h3 id="Description">Description<a class="anchor-link" href="#Description">&#182;</a></h3><p>Profile write-up for this pet. The primary language used is English, with some in Malay or Chinese. In future I could include a custom sentiment analysis, but for now I will use the sentiment analysis provided.</p>
 <p>Import sentiment analysis data:</p>
 
 </div>
@@ -15015,7 +15015,7 @@ Name: RescuerID, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Image-Data">Image Data<a class="anchor-link" href="#Image-Data">&#182;</a></h2><p>The competition hosts ran the images through Google's Vision API, providing analysis on Face Annotation, Label Annotation, Text Annotation and Image Properties. In future, I could do my own custom analysis of the images as well.</p>
+<h3 id="Image-Data">Image Data<a class="anchor-link" href="#Image-Data">&#182;</a></h3><p>The competition hosts ran the images through Google's Vision API, providing analysis on Face Annotation, Label Annotation, Text Annotation and Image Properties. In future, I could do my own custom analysis of the images as well.</p>
 
 </div>
 </div>
@@ -15283,7 +15283,7 @@ Name: RescuerID, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Modelling">Modelling<a class="anchor-link" href="#Modelling">&#182;</a></h1><p>Gradient boosting model</p>
+<h2 id="Modelling">Modelling<a class="anchor-link" href="#Modelling">&#182;</a></h2><p>Gradient boosting model</p>
 
 </div>
 </div>
@@ -15291,7 +15291,7 @@ Name: RescuerID, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-Preparation">Data Preparation<a class="anchor-link" href="#Data-Preparation">&#182;</a></h2>
+<h3 id="Data-Preparation">Data Preparation<a class="anchor-link" href="#Data-Preparation">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15359,7 +15359,7 @@ Name: RescuerID, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Model-Tuning">Model Tuning<a class="anchor-link" href="#Model-Tuning">&#182;</a></h2>
+<h3 id="Model-Tuning">Model Tuning<a class="anchor-link" href="#Model-Tuning">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15843,7 +15843,7 @@ tuned_model = xgb.train(
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Model-Predictions">Model Predictions<a class="anchor-link" href="#Model-Predictions">&#182;</a></h2>
+<h3 id="Model-Predictions">Model Predictions<a class="anchor-link" href="#Model-Predictions">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15900,7 +15900,7 @@ tuned_model = xgb.train(
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Interpreting-the-Model">Interpreting the Model<a class="anchor-link" href="#Interpreting-the-Model">&#182;</a></h2>
+<h3 id="Interpreting-the-Model">Interpreting the Model<a class="anchor-link" href="#Interpreting-the-Model">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15944,7 +15944,7 @@ tuned_model = xgb.train(
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h1><p>I could further enhance the model with custom NLP and image analysis, potentially stacking multiple models, although there is a computational time limit for this competition.</p>
+<h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h2><p>I could further enhance the model with custom NLP and image analysis, potentially stacking multiple models, although there is a computational time limit for this competition.</p>
 <p>The model could be implemented as a tool to help animal shelters and rescuers improve the appeal of pet profiles, improving pet adoption performance and reducing animal suffering and euthanization around the world.</p>
 
 </div>
