@@ -1,0 +1,70 @@
+---
+title: "Joshua Myers"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+urlcolor: blue
+---
+
+# Portfolio
+
+### PhD Project
+I present an overview of my PhD project [here](https://josh-myers.github.io/PhD_project.html).
+
+### Data Analyses with Code
+R: This [page](https://josh-myers.github.io/R_Ordinal_Analysis.html) presents an analysis in which I developed an ordinal model for diagnosing middle ear disease for my PhD project (Myers et al., 2018c).
+
+Python: This [page](https://josh-myers.github.io/Py_PetFinder.html) shows an analysis that I did in Python for a Kaggle competition.
+
+### Web Applications 
+[This app](https://joshmyers.shinyapps.io/WAIPredictions/) implements the predictive models that I have developed during my PhD project (Myers et al. 2018a, 2018b, 2018c). It allows the user to query a model with a subject's test result by either uploading an XML file saved from a clinical device, or entering the values for the model variables directly. The code is available [here](https://github.com/Josh-Myers/WAI-Predictions/blob/master/app.R).
+
+[This app](https://joshmyers.shinyapps.io/WAINorms/) serves as an interactive appendix that accompanies my Myers et al. (2018d) article. Users can choose various combinations of inputs to explore the data.
+
+I developed [this app](https://joshmyers.shinyapps.io/UNHS_RiskCalculator/) for a research team at the Univeristy of Queensland.
+
+### Publications
+Below are articles I have published or am in the process of publishing in scientific journals. 
+
+Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. [(2018a)](https://drive.google.com/open?id=1_CmxkPEaYMOC59w97PP0JEixyQpDYpst). Development of a diagnostic prediction model for conductive conditions in neonates using wideband acoustic immittance. Ear and Hearing, 39(6), 1116-1135.
+
+Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. [(2018b)](https://drive.google.com/open?id=1kEehS_egvOYwVFyBelFmbMPCnd1Gyhfk). Diagnosing middle ear pathology in 6- to 9-month-old infants using wideband absorbance: A risk prediction model. Journal of Speech Language and Hearing Research, 61(9), 2386-2404.
+
+Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. (2019a). Diagnosing middle ear dysfunction in 10- to 16-month-old infants using wideband absorbance: An ordinal prediction model. Manuscript submitted to Journal of Speech Language and Hearing Research.
+
+Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. (2019b). Longitudinal development of wideband absorbance and admittance through infancy. Manuscript submitted to Journal of Speech Language and Hearing Research.
+
+Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. (2019c). Diagnosing conductive dysfunction in infants using wideband acoustic immittance: Validation and development of predictive models. Manuscript submitted to Journal of Speech Language and Hearing Research.
+
+Myers, J., Malicka, A. N. (2014). Clinical feasibility of fast psychophysical tuning curves evaluated using normally hearing adults: Success rate, range of tip shift, repeatability, and comparison of methods used for estimation of frequency at the tip. International Journal of Audiology, 53(12) 887-894. 
+
+Aithal, S., Kei, J., Aithal, V., Manuel, A., Myers, J., Driscoll, C., & Khan, A. (2017). Normative study of wideband acoustic immittance measures in newborn infants. Journal of Speech Language and Hearing Research, 60(5), 1417-1426.
+
+### Conference Presentations
+These are presentations that I have given at international, national and local conferences. 
+
+*International*
+
+Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. (2016). Identifying conductive conditions in neonates using wideband acoustic immittance. Poster presented at 5th Joint Meeting of the Acoustical Society of America and Acoustical Society of Japan, Honolulu, Hawaii.
+
+Myers, J and Malicka, A.N. (2014). Fast psychophysical tuning curve measurement in normally hearing adults. Paper presented at XXXII World Congress of Audiology, Brisbane, Australia. 
+
+*National*
+
+Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. (2018). Predicting middle ear dysfunction in 6- to 9-month-old infants with wideband absorbance. Paper presented at Audiology Australia National Conference, Sydney, Australia. 
+
+Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. (2018). External validation of a wideband acoustic immittance model for identifying conductive conditions in neonates. Paper presented at Audiology Australia National Conference, Sydney, Australia. 
+
+Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. (2016). Identification of conductive conditions in neonates using wideband absorbance. Paper presented at Audiology Australia National Conference, Melbourne, Australia.
+
+*Local*
+
+Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. (2017). A prediction model for diagnosis of middle ear pathology in 6- to 9-month-old infants using wideband absorbance. Paper presented at Townsville Health Research Showcase, Townsville, Australia. 
+
+Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. (2017). Identification of outer/middle ear pathology in neonates using wideband acoustic immittance. Poster presented at Townsville Health Research Showcase, Townsville, Australia. 
+
+Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. (2016). Identifying conductive conditions in neonates with wideband absorbance. Paper presented at Townsville Hospital and Health Service Research Week Symposium, Townsville, Australia.
+
+Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. (2015). Innovative diagnosis of conductive conditions in neonates: Preliminary results. Paper presented at University of Queensland School of Health and Rehabilitation Sciences Postgraduate Research Conference, Brisbane, Australia.
+<br>
