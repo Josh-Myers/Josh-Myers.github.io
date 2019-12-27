@@ -235,7 +235,7 @@ display: none;
 padding: 0 4px 0 4px;
 }
 .pagedtable .even {
-background-color: #fcfcfc;
+background-color: rgba(140, 140, 140, 0.1);
 }
 .pagedtable-padding-col {
 display: none;
@@ -1525,9 +1525,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type="text/css">
 .main-container {
@@ -1552,22 +1550,92 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
 });
 </script>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -1583,18 +1651,16 @@ $(document).ready(function () {
 
 <div id="portfolio" class="section level1">
 <h1>Portfolio</h1>
-<div id="phd-project" class="section level3">
-<h3>PhD Project</h3>
+<div id="data-analyses" class="section level3">
+<h3>Data analyses</h3>
+<p>This <a href="https://josh-myers.github.io/road_deaths.html">page</a> presents an analysis (including a nice animated plot) that I did on road deaths in Australia for my Foundations for Data Science subject in the Graduate Certificate of Data Science.</p>
+<p>This <a href="https://drive.google.com/open?id=1_FBbVg83ztpqIlEdkmIXUKJOqPDMOteP">document</a> shows an analysis I did on risk factors for otitis media in infants for my Statistical Methods for Data Scientists subject in the Graduate Certificate of Data Science.</p>
 <p>I present an overview of my PhD project <a href="https://josh-myers.github.io/PhD_project.html">here</a>.</p>
-</div>
-<div id="data-analyses-with-code" class="section level3">
-<h3>Data Analyses with Code</h3>
 <p>This <a href="https://josh-myers.github.io/birds.html">page</a> presents a deep learning image classifier that I made with Python using a dataset created using Google image search. It is implemented in an app <a href="https://australian-birds-classifier.onrender.com/">here</a>.</p>
 <p>This <a href="https://josh-myers.github.io/R_Ordinal_Analysis.html">page</a> presents an analysis I did in R in which I developed an ordinal model for diagnosing middle ear disease for my PhD project (Myers et al., 2018c).</p>
-<p>This <a href="https://josh-myers.github.io/Py_PetFinder.html">page</a> shows an analysis that I did in Python for a Kaggle competition.</p>
 </div>
 <div id="web-applications" class="section level3">
-<h3>Web Applications</h3>
+<h3>Web applications</h3>
 <p><a href="https://joshmyers.shinyapps.io/WAIPredictions/">This app</a> implements the predictive models that I have developed during my PhD project (Myers et al. 2018a, 2018b, 2018c). It allows the user to query a model with a subject’s test result by either uploading an XML file saved from a clinical device, or entering the values for the model variables directly. The code is available <a href="https://github.com/Josh-Myers/WAI-Predictions/blob/master/app.R">here</a>.</p>
 <p><a href="https://australian-birds-classifier.onrender.com/">This app</a> implements the Australian Birds deep learning image classifier developed in Python.</p>
 <p><a href="https://joshmyers.shinyapps.io/WAINorms/">This app</a> serves as an interactive appendix that accompanies my Myers et al. (2018d) article. Users can choose various combinations of inputs to explore the data.</p>
@@ -1602,7 +1668,7 @@ $(document).ready(function () {
 </div>
 <div id="publications" class="section level3">
 <h3>Publications</h3>
-<p>Below are articles I have published or am in the process of publishing in scientific journals, and a link to my PhD thesis.</p>
+<p>Below are articles I have published in scientific journals, and a link to my PhD thesis.</p>
 <p>Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. <a href="https://drive.google.com/open?id=1_CmxkPEaYMOC59w97PP0JEixyQpDYpst">(2018a)</a>. Development of a diagnostic prediction model for conductive conditions in neonates using wideband acoustic immittance. Ear and Hearing, 39(6), 1116-1135.</p>
 <p>Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. <a href="https://drive.google.com/open?id=1kEehS_egvOYwVFyBelFmbMPCnd1Gyhfk">(2018b)</a>. Diagnosing middle ear pathology in 6- to 9-month-old infants using wideband absorbance: A risk prediction model. Journal of Speech Language and Hearing Research, 61(9), 2386-2404.</p>
 <p>Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. (2019a). Diagnosing middle ear dysfunction in 10- to 16-month-old infants using wideband absorbance: An ordinal prediction model. Manuscript submitted to Journal of Speech Language and Hearing Research. The code for the analyses is available <a href="https://github.com/Josh-Myers/Ordinal-Model-12-Months/blob/master/analysis.R">here</a>.</p>
