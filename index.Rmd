@@ -10,15 +10,16 @@ urlcolor: blue
 # Portfolio
 
 ### Data analyses 
-This [page](https://josh-myers.github.io/road_deaths.html) presents an analysis (including a nice animated plot) that I did on road deaths in Australia for my Foundations for Data Science subject in the Graduate Certificate of Data Science.
 
-This [document](https://drive.google.com/open?id=1_FBbVg83ztpqIlEdkmIXUKJOqPDMOteP) shows an analysis I did on risk factors for otitis media in infants for my Statistical Methods for Data Scientists subject in the Graduate Certificate of Data Science.
+This [page](https://josh-myers.github.io/road_deaths.html) presents an exploratory data analysis (see Figure 3, which is a nice animated plot) that I did on road deaths in Australia for my Graduate Certificate of Data Science course.
 
-I present an overview of my PhD project [here](https://josh-myers.github.io/PhD_project.html).
+This [document](https://drive.google.com/open?id=1_FBbVg83ztpqIlEdkmIXUKJOqPDMOteP) shows a statistical analysis I did on risk factors for middle ear infections in infants for my Graduate Certificate of Data Science course.
 
-This [page](https://josh-myers.github.io/birds.html) presents a deep learning image classifier that I made with Python using a dataset created using Google image search. It is implemented in an app [here](https://australian-birds-classifier.onrender.com/).
+I present an overview of predictive and inferential statistical models that I developed PhD project [here](https://josh-myers.github.io/PhD_project.html).
 
-This [page](https://josh-myers.github.io/R_Ordinal_Analysis.html) presents an analysis I did in R in which I developed an ordinal model for diagnosing middle ear disease for my PhD project (Myers et al., 2018c).
+This [page](https://josh-myers.github.io/birds.html) presents a deep learning image classifier that I made using a dataset created using Google image search. It is implemented in an app [here](https://australian-birds-classifier.onrender.com/).
+
+This [page](https://josh-myers.github.io/R_Ordinal_Analysis.html) presents an ordinal predictive model for diagnosing middle ear disease for my PhD project (Myers et al., 2018c).
 
 ### Web applications 
 [This app](https://joshmyers.shinyapps.io/WAIPredictions/) implements the predictive models that I have developed during my PhD project (Myers et al. 2018a, 2018b, 2018c). It allows the user to query a model with a subject's test result by either uploading an XML file saved from a clinical device, or entering the values for the model variables directly. The code is available [here](https://github.com/Josh-Myers/WAI-Predictions/blob/master/app.R).
