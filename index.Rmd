@@ -10,21 +10,16 @@ urlcolor: blue
 # Portfolio
 
 ### Data analyses 
+This [page](https://josh-myers.github.io/road_deaths.html) presents an analysis (including a nice animated plot) that I did on road deaths in Australia for my Foundations for Data Science subject in the Graduate Certificate of Data Science (toggle the 'code' buttons to show the R code).
 
-This [page](https://josh-myers.github.io/road_deaths.html) presents an exploratory data analysis (see Figure 3, which is a nice animated plot) that I did on road deaths in Australia for my Graduate Certificate of Data Science course.
+This [report](https://drive.google.com/open?id=1_FBbVg83ztpqIlEdkmIXUKJOqPDMOteP) shows an analysis I did on risk factors for otitis media in infants for my Statistical Methods for Data Scientists subject in the Graduate Certificate of Data Science (the R code is in the appendix).
 
-This [document](https://drive.google.com/open?id=1_FBbVg83ztpqIlEdkmIXUKJOqPDMOteP) shows a statistical analysis I did on risk factors for middle ear infections in infants for my Graduate Certificate of Data Science course.
+I present an overview of my PhD project [here](https://josh-myers.github.io/PhD_project.html).
 
-I present an overview of predictive and inferential statistical models that I developed PhD project [here](https://josh-myers.github.io/PhD_project.html).
-
-This [page](https://josh-myers.github.io/birds.html) presents a deep learning image classifier that I made using a dataset created using Google image search. It is implemented in an app [here](https://australian-birds-classifier.onrender.com/).
-
-This [page](https://josh-myers.github.io/R_Ordinal_Analysis.html) presents an ordinal predictive model for diagnosing middle ear disease for my PhD project (Myers et al., 2018c).
+This [page](https://josh-myers.github.io/R_Ordinal_Analysis.html) presents an analysis I did in R in which I developed an ordinal model for diagnosing middle ear disease for my PhD project (Myers et al., 2019a).
 
 ### Web applications 
-[This app](https://joshmyers.shinyapps.io/WAIPredictions/) implements the predictive models that I have developed during my PhD project (Myers et al. 2018a, 2018b, 2018c). It allows the user to query a model with a subject's test result by either uploading an XML file saved from a clinical device, or entering the values for the model variables directly. The code is available [here](https://github.com/Josh-Myers/WAI-Predictions/blob/master/app.R).
-
-[This app](https://australian-birds-classifier.onrender.com/) implements the Australian Birds deep learning image classifier developed in Python. 
+[This app](https://joshmyers.shinyapps.io/WAIPredictions/) implements the predictive models that I have developed during my PhD project (Myers et al. 2018a, 2018b, 2019a, 2019b, 2019c). It allows the user to query a model with a subject's test result by either uploading an XML file saved from a clinical device, or entering the values for the model variables directly. The code is available [here](https://github.com/Josh-Myers/WAI-Predictions/blob/master/app.R).
 
 [This app](https://joshmyers.shinyapps.io/WAINorms/) serves as an interactive appendix that accompanies my Myers et al. (2018d) article. Users can choose various combinations of inputs to explore the data.
 
@@ -37,13 +32,13 @@ Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. [(2018a)](https
 
 Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. [(2018b)](https://drive.google.com/open?id=1kEehS_egvOYwVFyBelFmbMPCnd1Gyhfk). Diagnosing middle ear pathology in 6- to 9-month-old infants using wideband absorbance: A risk prediction model. Journal of Speech Language and Hearing Research, 61(9), 2386-2404.
 
-Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. (2019a). Diagnosing middle ear dysfunction in 10- to 16-month-old infants using wideband absorbance: An ordinal prediction model. Manuscript submitted to Journal of Speech Language and Hearing Research. The code for the analyses is available [here](https://github.com/Josh-Myers/Ordinal-Model-12-Months/blob/master/analysis.R).
+Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. [(2019a)](https://drive.google.com/open?id=1dyWF6fOYsBNBAgxDfTKzxSZHTRGuE9gC). Diagnosing middle ear dysfunction in 10- to 16-month-old infants using wideband absorbance: An ordinal prediction model. Journal of Speech Language and Hearing Research, 62(8), 2906-2917. The code for the analyses is available [here](https://github.com/Josh-Myers/Ordinal-Model-12-Months/blob/master/analysis.R).
 
-Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. (2019b). Longitudinal development of wideband absorbance and admittance through infancy. Manuscript submitted to Journal of Speech Language and Hearing Research. The code for the analyses is available [here](https://github.com/Josh-Myers/Longitudinal-WAI/blob/master/figures%20and%20modeling.R).
+Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. [(2019b)](https://drive.google.com/open?id=1sMOreGdsooo5S8Cr4RycixxzvY33S64L). Longitudinal development of wideband absorbance and admittance through infancy. Journal of Speech Language and Hearing Research, 62(7), 2535-2552. The code for the analyses is available [here](https://github.com/Josh-Myers/Longitudinal-WAI/blob/master/figures%20and%20modeling.R).
 
-Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. (2019c). Diagnosing conductive dysfunction in infants using wideband acoustic immittance: Validation and development of predictive models. Manuscript submitted to Journal of Speech Language and Hearing Research. The code for the analyses is available [here](https://github.com/Josh-Myers/WAI-All-Ages/blob/master/age%20independent%20model.R) and [here](https://github.com/Josh-Myers/WAI-All-Ages/blob/master/validation%20newborn.R).
+Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. [(2019c)](https://drive.google.com/open?id=1ubajTFppTO7jP_b7v97D5grdQOaTISFx). Diagnosing conductive dysfunction in infants using wideband acoustic immittance: Validation and development of predictive models. Journal of Speech Language and Hearing Research, 62(9), 3607-3619 The code for the analyses is available [here](https://github.com/Josh-Myers/WAI-All-Ages/blob/master/age%20independent%20model.R) and [here](https://github.com/Josh-Myers/WAI-All-Ages/blob/master/validation%20newborn.R).
 
-Myers, J. [(2019d)](https://drive.google.com/file/d/1giXgBKy5Kp5N4VhMN2hSjBN60ffvTifk/view?usp=sharing). Diagnosing conductive dysfunction in infants using wideband acoustic Immittance: Development and validation of predictive models (Unpublished doctoral dissertation). University of Queensland, Brisbane, Australia.
+Myers, J. [(2020)](https://drive.google.com/open?id=1sab6jl9m2W8alOAT-93gqVIznPTSCQeG). Diagnosing conductive dysfunction in infants using wideband acoustic Immittance: Development and validation of predictive models (Unpublished doctoral dissertation). University of Queensland, Brisbane, Australia.
 
 Myers, J., Malicka, A. N. (2014). Clinical feasibility of fast psychophysical tuning curves evaluated using normally hearing adults: Success rate, range of tip shift, repeatability, and comparison of methods used for estimation of frequency at the tip. International Journal of Audiology, 53(12) 887-894. 
 
