@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -1539,7 +1539,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -1601,6 +1600,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -1612,18 +1612,6 @@ summary {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -1653,16 +1641,14 @@ $(document).ready(function () {
 <h1>Portfolio</h1>
 <div id="data-analyses" class="section level3">
 <h3>Data analyses</h3>
-<p>This <a href="https://josh-myers.github.io/road_deaths.html">page</a> presents an analysis (including a nice animated plot) that I did on road deaths in Australia for my Foundations for Data Science subject in the Graduate Certificate of Data Science (toggle the ‘code’ buttons to show the R code).</p>
-<p>This <a href="https://drive.google.com/open?id=1_FBbVg83ztpqIlEdkmIXUKJOqPDMOteP">report</a> shows an analysis I did on risk factors for otitis media in infants for my Statistical Methods for Data Scientists subject in the Graduate Certificate of Data Science (the R code is in the appendix).</p>
-<p>I present an overview of my PhD project <a href="https://josh-myers.github.io/PhD_project.html">here</a>.</p>
-<p>This <a href="https://josh-myers.github.io/R_Ordinal_Analysis.html">page</a> presents an analysis I did in R in which I developed an ordinal model for diagnosing middle ear disease for my PhD project (Myers et al., 2019a).</p>
+<p>Analyses completed as part of my Graduate Diploma of Data Science are presented <a href="https://josh-myers.github.io/road_deaths.html">here</a>, <a href="https://josh-myers.github.io/electoral_survey.html">here</a> and <a href="https://drive.google.com/open?id=1_FBbVg83ztpqIlEdkmIXUKJOqPDMOteP">here</a>. The first is an exploratory analysis of the Australian Road Deaths Database (with a nice animated plot), the second, a predictive and inferential study on the Australian Electoral Study survey data (toggle the ‘code’ buttons to show the R code), and the third, an inferential study on risk factors for ear infections in infants.</p>
+<p>I present an overview of my PhD project <a href="https://josh-myers.github.io/PhD_project.html">here</a>, with a more detailed presentation of one of the studies <a href="https://josh-myers.github.io/R_Ordinal_Analysis.html">here</a>.</p>
 </div>
 <div id="web-applications" class="section level3">
 <h3>Web applications</h3>
 <p><a href="https://joshmyers.shinyapps.io/WAIPredictions/">This app</a> implements the predictive models that I have developed during my PhD project (Myers et al. 2018a, 2018b, 2019a, 2019b, 2019c). It allows the user to query a model with a subject’s test result by either uploading an XML file saved from a clinical device, or entering the values for the model variables directly. The code is available <a href="https://github.com/Josh-Myers/WAI-Predictions/blob/master/app.R">here</a>.</p>
 <p><a href="https://joshmyers.shinyapps.io/WAINorms/">This app</a> serves as an interactive appendix that accompanies my Myers et al. (2019b) article. Users can choose various combinations of inputs to explore the data.</p>
-<p>I developed <a href="https://joshmyers.shinyapps.io/UNHS_RiskCalculator/">this app</a> for a research team at the Univeristy of Queensland.</p>
+<p>I developed <a href="https://joshmyers.shinyapps.io/UNHS_RiskCalculator/">this app</a> for a research team at the University of Queensland.</p>
 </div>
 <div id="publications" class="section level3">
 <h3>Publications</h3>
@@ -1677,7 +1663,7 @@ $(document).ready(function () {
 <p>Aithal, S., Kei, J., Aithal, V., Manuel, A., Myers, J., Driscoll, C., &amp; Khan, A. (2017). Normative study of wideband acoustic immittance measures in newborn infants. Journal of Speech Language and Hearing Research, 60(5), 1417-1426.</p>
 </div>
 <div id="conference-presentations" class="section level3">
-<h3>Conference Presentations</h3>
+<h3>Conference presentations</h3>
 <p>These are presentations that I have given at international, national and local conferences.</p>
 <p><em>International</em></p>
 <p>Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. (2016). Identifying conductive conditions in neonates using wideband acoustic immittance. Poster presented at 5th Joint Meeting of the Acoustical Society of America and Acoustical Society of Japan, Honolulu, Hawaii.</p>
@@ -1711,6 +1697,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

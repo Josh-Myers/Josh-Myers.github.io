@@ -10,20 +10,16 @@ urlcolor: blue
 # Portfolio
 
 ### Data analyses 
-This [page](https://josh-myers.github.io/road_deaths.html) presents an analysis (including a nice animated plot) that I did on road deaths in Australia for my Foundations for Data Science subject in the Graduate Certificate of Data Science (toggle the 'code' buttons to show the R code).
+Analyses completed as part of my Graduate Diploma of Data Science are presented [here](https://josh-myers.github.io/road_deaths.html),  [here](https://josh-myers.github.io/electoral_survey.html) and [here](https://drive.google.com/open?id=1_FBbVg83ztpqIlEdkmIXUKJOqPDMOteP). The first is an exploratory analysis of the Australian Road Deaths Database (with a nice animated plot), the second, a predictive and inferential study on the Australian Electoral Study survey data (toggle the 'code' buttons to show the R code), and the third, an inferential study on risk factors for ear infections in infants. 
 
-This [report](https://drive.google.com/open?id=1_FBbVg83ztpqIlEdkmIXUKJOqPDMOteP) shows an analysis I did on risk factors for otitis media in infants for my Statistical Methods for Data Scientists subject in the Graduate Certificate of Data Science (the R code is in the appendix).
-
-I present an overview of my PhD project [here](https://josh-myers.github.io/PhD_project.html).
-
-This [page](https://josh-myers.github.io/R_Ordinal_Analysis.html) presents an analysis I did in R in which I developed an ordinal model for diagnosing middle ear disease for my PhD project (Myers et al., 2019a).
+I present an overview of my PhD project [here](https://josh-myers.github.io/PhD_project.html), with a more detailed presentation of one of the studies [here](https://josh-myers.github.io/R_Ordinal_Analysis.html).
 
 ### Web applications 
 [This app](https://joshmyers.shinyapps.io/WAIPredictions/) implements the predictive models that I have developed during my PhD project (Myers et al. 2018a, 2018b, 2019a, 2019b, 2019c). It allows the user to query a model with a subject's test result by either uploading an XML file saved from a clinical device, or entering the values for the model variables directly. The code is available [here](https://github.com/Josh-Myers/WAI-Predictions/blob/master/app.R).
 
 [This app](https://joshmyers.shinyapps.io/WAINorms/) serves as an interactive appendix that accompanies my Myers et al. (2019b) article. Users can choose various combinations of inputs to explore the data.
 
-I developed [this app](https://joshmyers.shinyapps.io/UNHS_RiskCalculator/) for a research team at the Univeristy of Queensland.
+I developed [this app](https://joshmyers.shinyapps.io/UNHS_RiskCalculator/) for a research team at the University of Queensland.
 
 ### Publications
 Below are articles I have published in scientific journals, and a link to my PhD thesis. 
@@ -44,7 +40,7 @@ Myers, J., Malicka, A. N. (2014). Clinical feasibility of fast psychophysical tu
 
 Aithal, S., Kei, J., Aithal, V., Manuel, A., Myers, J., Driscoll, C., & Khan, A. (2017). Normative study of wideband acoustic immittance measures in newborn infants. Journal of Speech Language and Hearing Research, 60(5), 1417-1426.
 
-### Conference Presentations
+### Conference presentations
 These are presentations that I have given at international, national and local conferences. 
 
 *International*
