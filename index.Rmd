@@ -10,7 +10,7 @@ urlcolor: blue
 # Portfolio
 
 ### Data analyses 
-Analyses completed as part of my Graduate Diploma of Data Science are presented [here](https://josh-myers.github.io/road_deaths.html),  [here](https://josh-myers.github.io/electoral_survey.html) and [here](https://drive.google.com/open?id=1_FBbVg83ztpqIlEdkmIXUKJOqPDMOteP). The first is an exploratory analysis of the Australian Road Deaths Database (with a nice animated plot), the second, a predictive and inferential study on the Australian Electoral Study survey data (toggle the 'code' buttons to show the R code), and the third, an inferential study on risk factors for ear infections in infants. 
+Analyses completed as part of my Graduate Diploma of Data Science are presented [here](https://josh-myers.github.io/road_deaths.html),  [here](https://josh-myers.github.io/electoral_survey.html) and [here](https://drive.google.com/open?id=1_FBbVg83ztpqIlEdkmIXUKJOqPDMOteP). The first is an exploratory analysis of the Australian Road Deaths Database (with a nice animated plot), the second, a predictive and inferential study on the Australian Electoral Study survey data (toggle the 'code' buttons to show the code for these analyses), and the third, an inferential study on risk factors for ear infections in infants. 
 
 I present an overview of my PhD project [here](https://josh-myers.github.io/PhD_project.html), with a more detailed presentation of one of the studies [here](https://josh-myers.github.io/R_Ordinal_Analysis.html).
 
