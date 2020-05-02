@@ -15,7 +15,7 @@ Analyses completed as part of my Graduate Diploma of Data Science are presented 
 I present an overview of my PhD project [here](https://josh-myers.github.io/PhD_project.html), with a more detailed presentation of one of the studies [here](https://josh-myers.github.io/R_Ordinal_Analysis.html).
 
 ### Web applications 
-[This app](https://joshmyers.shinyapps.io/WAIPredictions/) implements the predictive models that I have developed during my PhD project (Myers et al. 2018a, 2018b, 2019a, 2019b, 2019c). It allows the user to query a model with a subject's test result by either uploading an XML file saved from a clinical device, or entering the values for the model variables directly. The code is available [here](https://github.com/Josh-Myers/WAI-Predictions/blob/master/app.R).
+[This app](https://joshmyers.shinyapps.io/WAIPredictions/) implements the predictive models that I have developed during my PhD project (Myers et al. 2018a, 2018b, 2019a, 2019b, 2019c). It allows the user to query a model with a subject's test result by either uploading an XML file saved from a clinical device, or entering the values for the model variables directly. 
 
 [This app](https://joshmyers.shinyapps.io/WAINorms/) serves as an interactive appendix that accompanies my Myers et al. (2019b) article. Users can choose various combinations of inputs to explore the data.
 
@@ -23,6 +23,8 @@ I developed [this app](https://joshmyers.shinyapps.io/UNHS_RiskCalculator/) for 
 
 ### Publications
 Below are articles I have published in scientific journals, and a link to my PhD thesis. 
+
+Myers, J. [(2020)](https://drive.google.com/open?id=1sab6jl9m2W8alOAT-93gqVIznPTSCQeG). Diagnosing conductive dysfunction in infants using wideband acoustic Immittance: Development and validation of predictive models (Unpublished doctoral dissertation). University of Queensland, Brisbane, Australia.
 
 Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. [(2018a)](https://drive.google.com/open?id=1_CmxkPEaYMOC59w97PP0JEixyQpDYpst). Development of a diagnostic prediction model for conductive conditions in neonates using wideband acoustic immittance. Ear and Hearing, 39(6), 1116-1135.
 
@@ -33,8 +35,6 @@ Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. [(2019a)](https
 Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. [(2019b)](https://drive.google.com/open?id=1sMOreGdsooo5S8Cr4RycixxzvY33S64L). Longitudinal development of wideband absorbance and admittance through infancy. Journal of Speech Language and Hearing Research, 62(7), 2535-2552. The code for the analyses is available [here](https://github.com/Josh-Myers/Longitudinal-WAI/blob/master/figures%20and%20modeling.R).
 
 Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. [(2019c)](https://drive.google.com/open?id=1ubajTFppTO7jP_b7v97D5grdQOaTISFx). Diagnosing conductive dysfunction in infants using wideband acoustic immittance: Validation and development of predictive models. Journal of Speech Language and Hearing Research, 62(9), 3607-3619 The code for the analyses is available [here](https://github.com/Josh-Myers/WAI-All-Ages/blob/master/age%20independent%20model.R) and [here](https://github.com/Josh-Myers/WAI-All-Ages/blob/master/validation%20newborn.R).
-
-Myers, J. [(2020)](https://drive.google.com/open?id=1sab6jl9m2W8alOAT-93gqVIznPTSCQeG). Diagnosing conductive dysfunction in infants using wideband acoustic Immittance: Development and validation of predictive models (Unpublished doctoral dissertation). University of Queensland, Brisbane, Australia.
 
 Myers, J., Malicka, A. N. (2014). Clinical feasibility of fast psychophysical tuning curves evaluated using normally hearing adults: Success rate, range of tip shift, repeatability, and comparison of methods used for estimation of frequency at the tip. International Journal of Audiology, 53(12) 887-894. 
 
