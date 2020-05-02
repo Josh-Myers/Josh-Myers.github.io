@@ -24,7 +24,7 @@ I developed [this app](https://joshmyers.shinyapps.io/UNHS_RiskCalculator/) for 
 ### Publications
 Below are articles I have published in scientific journals, and a link to my PhD thesis. 
 
-Myers, J. [(2020)](https://drive.google.com/open?id=1sab6jl9m2W8alOAT-93gqVIznPTSCQeG). Diagnosing conductive dysfunction in infants using wideband acoustic Immittance: Development and validation of predictive models (Unpublished doctoral dissertation). University of Queensland, Brisbane, Australia.
+Myers, J. [(2020)](https://drive.google.com/open?id=1sab6jl9m2W8alOAT-93gqVIznPTSCQeG). Diagnosing conductive dysfunction in infants using wideband acoustic immittance: Development and validation of predictive models (Unpublished doctoral dissertation). University of Queensland, Brisbane, Australia.
 
 Myers, J., Kei, J., Aithal, S., Aithal, V., Driscoll, C., et al. [(2018a)](https://drive.google.com/open?id=1_CmxkPEaYMOC59w97PP0JEixyQpDYpst). Development of a diagnostic prediction model for conductive conditions in neonates using wideband acoustic immittance. Ear and Hearing, 39(6), 1116-1135.
 
