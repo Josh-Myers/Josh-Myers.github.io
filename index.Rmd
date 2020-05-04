@@ -10,12 +10,12 @@ urlcolor: blue
 # Portfolio
 
 ### Data analyses 
-Analyses completed as part of my Graduate Diploma of Data Science are presented [here](https://josh-myers.github.io/road_deaths.html),  [here](https://josh-myers.github.io/electoral_survey.html) and [here](https://drive.google.com/open?id=1_FBbVg83ztpqIlEdkmIXUKJOqPDMOteP). The first is an exploratory analysis of the Australian Road Deaths Database (with a nice animated plot), the second, a predictive and inferential study on the Australian Electoral Study survey data (toggle the 'code' buttons to show the code for these analyses), and the third, an inferential study on risk factors for ear infections in infants. 
+Projects completed as part of my Graduate Diploma of Data Science are presented [here](https://josh-myers.github.io/road_deaths.html),  [here](https://josh-myers.github.io/electoral_survey.html) and [here](https://drive.google.com/open?id=1_FBbVg83ztpqIlEdkmIXUKJOqPDMOteP). The first is an exploratory analysis of the Australian Road Deaths Database (with a nice animated plot), the second, a predictive and inferential study on the Australian Electoral Study survey data (toggle the 'code' buttons to show the code for these analyses), and the third, an inferential study on risk factors for ear infections in infants. 
 
 I present an overview of my PhD project [here](https://josh-myers.github.io/PhD_project.html), with a more detailed presentation of one of the studies [here](https://josh-myers.github.io/R_Ordinal_Analysis.html).
 
 ### Web applications 
-[This app](https://joshmyers.shinyapps.io/WAIPredictions/) implements the predictive models that I have developed during my PhD project (Myers et al. 2018a, 2018b, 2019a, 2019b, 2019c). It allows the user to query a model with a subject's test result by either uploading an XML file saved from a clinical device, or entering the values for the model variables directly. 
+[This app](https://joshmyers.shinyapps.io/WAIPredictions/) implements the predictive models that I developed during my PhD project (Myers et al. 2018a, 2018b, 2019a, 2019b, 2019c). It allows the user to query a model with a subject's test result by either uploading an XML file saved from a clinical device, or entering the values for the model variables directly. 
 
 [This app](https://joshmyers.shinyapps.io/WAINorms/) serves as an interactive appendix that accompanies my Myers et al. (2019b) article. Users can choose various combinations of inputs to explore the data.
 
